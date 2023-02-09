@@ -4,6 +4,94 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 77.05%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+}
+
+.header-page-name {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-page-name a {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.header-page-name h1 a {
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-buttons form input {
+  display: none;
+}
+
+.header-buttons form button {
+  border: none;
+  margin-right: 15px;
+  background-color: transparent;
+  color: #808080;
+  font-size: 0;
+}
+
+.header-buttons form button::after {
+  content: '\f002';
+  display: inline-block;
+  font-family: "Font Awesome 6 Free";
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.header-buttons .sign-up {
+  padding: 5px 7px;
+  border: 2px solid #808080;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #808080;
+  font-size: 16px;
 }
 /*# sourceMappingURL=blogs.css.map */
