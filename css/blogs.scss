@@ -3,9 +3,10 @@ $color2: #000;
 $color3: #808080;
 $color4: rgba(0, 123, 255, 1);
 $color5: rgba(40, 167, 69, 1);
+$color6: #e5e5e5;
 
 * { box-sizing: border-box; }
-body {  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 a {
   text-decoration: none;
@@ -23,13 +24,11 @@ button {
   margin: 0 auto;
 }
 
-header {
-  padding: 20px 0;
-}
+header { padding-top: 20px; }
 
 .header-page-name {
   padding-bottom: 15px;
-  border-bottom: 2px solid $color3;
+  border-bottom: 1px solid $color6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,5 +81,20 @@ header {
     background-color: transparent;
     color: $color3;
     font-size: 16px;
+  }
+}
+
+nav {
+  ul {
+    padding: 15px 5px 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color: $color3;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
   }
 }
