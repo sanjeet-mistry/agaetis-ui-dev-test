@@ -46,3 +46,11 @@ hamburger.addEventListener("click", () => {
     ulNavigation.classList.add("show");
   }
 });
+
+const backToTop = body.querySelector("footer .back-to-top");
+backToTop.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  })
+})
