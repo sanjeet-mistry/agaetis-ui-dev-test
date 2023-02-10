@@ -104,6 +104,7 @@ nav {
 }
 
 .banner {
+  margin-bottom: 30px;
   padding: 60px 4.73%;
   border-radius: 5px;
   background-color: $color7;
@@ -133,5 +134,76 @@ nav {
     color: $color1;
     font-size: 22px;
     font-weight: bold;
+  }
+}
+
+.posts-with-thumbnail {
+  display: flex;
+  column-gap: 2.7%;
+
+  li {
+    border: 2px solid $color6;
+    border-radius: 3px;
+    display: flex;
+  }
+
+  .post-content {
+    padding: 30px 5% 15px;
+    flex-basis: 62.86%;
+    flex-shrink: 0;
+
+    .post-category {
+      margin-bottom: 20px;
+      display: inline-block;
+      color: $color4;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: capitalize;
+
+      &.green { color: $color5; }
+    }
+
+    h3 {
+      margin-bottom: 5px;
+      color: $color2;
+      font-family: $font-secondary;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .date {
+      margin-bottom: 10px;
+      display: inline-block;
+      color: $color3;
+      font-size: 16px;
+    }
+
+    .content {
+      margin-bottom: 20px;
+      color: $color2;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+
+    a {
+      display: inline-block;
+      color: $color4;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  figure {
+    flex-basis: 37.14%;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      display: block;
+    }
   }
 }
