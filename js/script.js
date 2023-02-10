@@ -48,6 +48,7 @@ hamburger.addEventListener("click", () => {
 });
 
 const backToTop = body.querySelector("footer .back-to-top");
+
 backToTop.addEventListener("click", () => {
   window.scroll({
     top: 0,
