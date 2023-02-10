@@ -279,6 +279,12 @@ nav a {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1240px) {
+  nav a {
+    font-size: 16px;
+  }
+}
+
 nav a:hover {
   color: #007BFF;
 }
@@ -288,6 +294,12 @@ nav a:hover {
   padding: 60px 4.73%;
   border-radius: 5px;
   background-color: #343A40;
+}
+
+@media screen and (max-width: 1240px) {
+  .banner {
+    padding: 50px 4.73%;
+  }
 }
 
 .banner > * {
@@ -310,16 +322,35 @@ nav a:hover {
   font-style: italic;
 }
 
+@media screen and (max-width: 1240px) {
+  .banner h2 {
+    font-size: 40px;
+  }
+}
+
 .banner p {
   color: #fff;
   font-size: 20px;
   line-height: 28px;
 }
 
+@media screen and (max-width: 1240px) {
+  .banner p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
 .banner a {
   color: #fff;
   font-size: 22px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1240px) {
+  .banner a {
+    font-size: 20px;
+  }
 }
 
 .banner a:hover {
