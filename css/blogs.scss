@@ -10,9 +10,29 @@ $color8: #f8f8f8;
 $font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $font-secondary: 'Times New Roman', Times, serif;
 
+$small-desktop: 1240px;
+$small-mobile: 400px;
+
+@mixin breakpoint($device) {
+	@if ($device == 'small-desktop') {
+		@media screen and (max-width: $small-desktop) {
+      @content;
+    }
+	}
+  @else if ($device=='small-mobile'){
+    @media screen and (max-width: $small-mobile) {
+      @content;
+    }
+  }
+}
+
 /* Common Styles start */
 * { box-sizing: border-box; }
-body { font-family: $font-primary; }
+
+body { 
+  font-family: $font-primary;
+  font-display: swap;
+}
 
 a {
   text-decoration: none;
@@ -200,9 +220,12 @@ nav {
   }
 
   .post-content {
-    padding: 30px 5% 15px;
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: column;
     flex-basis: 62.86%;
     flex-shrink: 0;
+    justify-content: center;
 
     .post-category {
       margin-bottom: 20px;
@@ -243,6 +266,8 @@ nav {
   }
 
   figure {
+    display: flex;
+    align-items: center;
     flex-basis: 37.14%;
     flex-shrink: 0;
 
@@ -466,9 +491,7 @@ footer {
     &.back-to-top {
       @extend %blue-links-style;
 
-      &:hover {
-        cursor: pointer;
-      }
+      &:hover { cursor: pointer; }
     }
 
     a {

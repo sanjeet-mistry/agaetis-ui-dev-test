@@ -6,6 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-display: swap;
 }
 
 a {
@@ -233,11 +234,21 @@ nav a:hover {
 }
 
 .posts-with-thumbnail .post-content {
-  padding: 30px 5% 15px;
+  padding: 25px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-preferred-size: 62.86%;
       flex-basis: 62.86%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .posts-with-thumbnail .post-content .post-category {
@@ -276,6 +287,12 @@ nav a:hover {
 }
 
 .posts-with-thumbnail figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-preferred-size: 37.14%;
       flex-basis: 37.14%;
   -ms-flex-negative: 0;
