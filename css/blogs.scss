@@ -145,6 +145,9 @@ nav {
     border: 2px solid $color6;
     border-radius: 3px;
     display: flex;
+    -webkit-box-shadow: 0 3px 3px 0px $color6;
+    -moz-box-shadow: 0 3px 3px 0px $color6;
+    box-shadow: 0 3px 3px 0px $color6;
   }
 
   .post-content {
@@ -205,5 +208,14 @@ nav {
       border-bottom-right-radius: 3px;
       display: block;
     }
+  }
+}
+
+.blogs-section {
+  display: flex;
+
+  aside {
+    flex-basis: 31.4%;
+    flex-shrink: 0;
   }
 }

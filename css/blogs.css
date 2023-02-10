@@ -165,6 +165,8 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 3px 3px 0px #e5e5e5;
+  box-shadow: 0 3px 3px 0px #e5e5e5;
 }
 
 .posts-with-thumbnail .post-content {
@@ -231,5 +233,18 @@ nav a {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   display: block;
+}
+
+.blogs-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogs-section aside {
+  -ms-flex-preferred-size: 31.4%;
+      flex-basis: 31.4%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 /*# sourceMappingURL=blogs.css.map */
