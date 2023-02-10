@@ -224,6 +224,7 @@ nav {
 
 .blogs-container {
   margin-bottom: 60px;
+  
   h3 {
     padding-bottom: 20px;
     border-bottom: 2px solid $color6;
@@ -233,28 +234,6 @@ nav {
     font-size: 32px;
     font-style: italic;
     font-weight: bold;
-  }
-
-  .blog-control-buttons {
-    display: flex;
-    
-    button {
-      padding: 8px 15px;
-      border: 1px solid $color4;
-      border-radius: 20px;
-      margin-right: 5px;
-      display: inline-block;
-      color: $color4;
-      font-size: 17px;
-      text-transform: capitalize;
-
-      &:last-child { margin-right: 0; }
-
-      &.disabled {
-        border: 1px solid $color3;
-        color: $color3;
-      }
-    }
   }
 }
 
@@ -352,6 +331,29 @@ nav {
       font-size: 17px;
 
       &:last-child { margin-bottom: 0; }
+    }
+  }
+}
+
+.blog-control-buttons {
+  display: flex;
+
+  button {
+    padding: 8px 15px;
+    border: 1px solid $color4;
+    border-radius: 20px;
+    margin-right: 5px;
+    display: inline-block;
+    color: $color4;
+    font-size: 17px;
+    text-transform: capitalize;
+
+    &:last-child { margin-right: 0; }
+
+    &.disabled {
+      border: 1px solid $color3;
+      color: $color3;
+      &:hover { cursor: default; }
     }
   }
 }

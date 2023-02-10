@@ -266,32 +266,6 @@ nav a {
   font-weight: bold;
 }
 
-.blogs-container .blog-control-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.blogs-container .blog-control-buttons button {
-  padding: 8px 15px;
-  border: 1px solid #007BFF;
-  border-radius: 20px;
-  margin-right: 5px;
-  display: inline-block;
-  color: #007BFF;
-  font-size: 17px;
-  text-transform: capitalize;
-}
-
-.blogs-container .blog-control-buttons button:last-child {
-  margin-right: 0;
-}
-
-.blogs-container .blog-control-buttons button.disabled {
-  border: 1px solid #808080;
-  color: #808080;
-}
-
 .blogs {
   margin-bottom: 60px;
 }
@@ -406,5 +380,35 @@ nav a {
 
 .blogs ol li:last-child {
   margin-bottom: 0;
+}
+
+.blog-control-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-control-buttons button {
+  padding: 8px 15px;
+  border: 1px solid #007BFF;
+  border-radius: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  color: #007BFF;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.blog-control-buttons button:last-child {
+  margin-right: 0;
+}
+
+.blog-control-buttons button.disabled {
+  border: 1px solid #808080;
+  color: #808080;
+}
+
+.blog-control-buttons button.disabled:hover {
+  cursor: default;
 }
 /*# sourceMappingURL=blogs.css.map */
