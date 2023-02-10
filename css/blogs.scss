@@ -66,6 +66,10 @@ button {
     font-size: 16px;
   }
 
+  @include breakpoint(small-mobile) {
+    font-size: 14px;
+  }
+
   &:hover { color: $color7; }
 }
 
@@ -75,6 +79,10 @@ button {
   li {
     margin-bottom: 7px;
     &:last-child { margin-bottom: 0; }
+
+    @include breakpoint(small-mobile) {
+      text-align: center;
+    }
   }
 
   a {
@@ -141,6 +149,10 @@ header {
         font-size: 40px;
         font-weight: bold;
         &:hover { color: $color7; }
+
+        @include breakpoint(small-mobile) {
+          font-size: 32px;
+        }
       }
     }
   }
@@ -221,6 +233,10 @@ nav {
         font-family: "Font Awesome 6 Free";
         font-size: 18px;
         font-weight: 900;
+
+        @include breakpoint(small-mobile) {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -257,6 +273,10 @@ nav {
     @include breakpoint(tablet) {
       font-size: 16px;
     }
+
+    @include breakpoint(small-mobile) {
+      font-size: 14px;
+    }
     
     &:hover { color: $color4; }
   }
@@ -289,6 +309,10 @@ nav {
     @include breakpoint(tablet) {
       font-size: 40px;
     }
+
+    @include breakpoint(small-mobile) {
+      font-size: 30px;
+    }
   }
 
   p {
@@ -300,6 +324,11 @@ nav {
       font-size: 18px;
       line-height: 26px;
     }
+
+    @include breakpoint(small-mobile) {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   a {
@@ -309,6 +338,10 @@ nav {
 
     @include breakpoint(tablet) {
       font-size: 20px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 16px;
     }
 
     &:hover { color: $color4; }
@@ -336,6 +369,10 @@ nav {
       margin-bottom: 15px;
       &:last-child { margin-bottom: 0; }
     }
+
+    @include breakpoint(small-mobile) {
+      display: block;
+    }
   }
 
   .post-content {
@@ -354,6 +391,10 @@ nav {
       font-weight: bold;
       text-transform: capitalize;
 
+      @include breakpoint(small-mobile) {
+        font-size: 12px;
+      }
+
       &.green { color: $color5; }
     }
 
@@ -367,6 +408,10 @@ nav {
       @include breakpoint(tablet) {
         font-size: 26px;
       }
+
+      @include breakpoint(small-mobile) {
+        font-size: 24px;
+      }
     }
 
     .date {
@@ -378,6 +423,10 @@ nav {
       @include breakpoint(tablet) {
         font-size: 16px;
       }
+
+      @include breakpoint(small-mobile) {
+        font-size: 14px;
+      }
     }
 
     .content {
@@ -388,6 +437,11 @@ nav {
 
       @include breakpoint(tablet) {
         font-size: 16px;
+      }
+
+      @include breakpoint(small-mobile) {
+        font-size: 14px;
+        line-height: 18px;
       }
     }
 
@@ -406,6 +460,10 @@ nav {
       justify-content: flex-end;
     }
 
+    @include breakpoint(small-mobile) {
+      margin-bottom: 25px;
+    }
+
     img {
       width: 100%;
       height: auto;
@@ -415,6 +473,11 @@ nav {
 
       @include breakpoint(tablet) {
         max-width: 300px;
+      }
+
+      @include breakpoint(small-mobile) {
+        max-width: 250px;
+        margin: 0 auto;
       }
     }
   }
@@ -450,6 +513,11 @@ nav {
       @include breakpoint(tablet) {
         font-size: 26px;
       }
+
+      @include breakpoint(small-mobile) {
+        font-size: 24px;
+        text-align: center;
+      }
     }
   }
 }
@@ -470,6 +538,10 @@ nav {
     @include breakpoint(tablet) {
       font-size: 26px;
     }
+
+    @include breakpoint(small-mobile) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -487,6 +559,10 @@ nav {
       margin-bottom: 50px;
     }
 
+    @include breakpoint(small-mobile) {
+      margin-bottom: 40px;
+    }
+
     &:last-child { margin-bottom: 0; }
   }
 
@@ -500,6 +576,10 @@ nav {
     @include breakpoint(tablet) {
       font-size: 34px;
     }
+
+    @include breakpoint(small-mobile) {
+      font-size: 26px;
+    }
   }
 
   .date-author {
@@ -510,6 +590,10 @@ nav {
 
     @include breakpoint(tablet) {
       font-size: 16px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 14px;
     }
 
     a {
@@ -526,6 +610,11 @@ nav {
 
     @include breakpoint(tablet) {
       font-size: 16px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 14px;
+      line-height: 20px;
     }
 
     &:last-child { margin-bottom: 0; }
@@ -550,6 +639,10 @@ nav {
     @include breakpoint(tablet) {
       font-size: 30px;
     }
+
+    @include breakpoint(small-mobile) {
+      font-size: 22px;
+    }
   }
 
   h6 {
@@ -562,6 +655,10 @@ nav {
     @include breakpoint(tablet) {
       font-size: 24px;
     }
+
+    @include breakpoint(small-mobile) {
+      font-size: 20px;
+    }
   }
 
   code {
@@ -572,6 +669,10 @@ nav {
 
     @include breakpoint(tablet) {
       font-size: 16px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 14px;
     }
   }
 
@@ -588,6 +689,11 @@ nav {
       @include breakpoint(tablet) {
         margin-bottom: 8px;
         font-size: 16px;
+        line-height: 20px;
+      }
+
+      @include breakpoint(small-mobile) {
+        font-size: 14px;
       }
 
       &:last-child { margin-bottom: 0; }
@@ -607,6 +713,11 @@ nav {
       @include breakpoint(tablet) {
         margin-bottom: 8px;
         font-size: 16px;
+        line-height: 20px;
+      }
+
+      @include breakpoint(small-mobile) {
+        font-size: 14px;
       }
 
       &:last-child { margin-bottom: 0; }
@@ -630,6 +741,10 @@ nav {
 
     @include breakpoint(tablet) {
       font-size: 16px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 14px;
     }
 
     &:hover {
@@ -665,6 +780,12 @@ nav {
 
     @include breakpoint(tablet) {
       font-size: 16px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center
     }
   }
 }

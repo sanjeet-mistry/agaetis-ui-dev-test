@@ -51,6 +51,12 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .archives a, .elsewhere a, .posts-with-thumbnail .post-content a, .blogs .date-author a, .blogs p a, footer span.back-to-top, footer span a {
+    font-size: 14px;
+  }
+}
+
 .archives a:hover, .elsewhere a:hover, .posts-with-thumbnail .post-content a:hover, .blogs .date-author a:hover, .blogs p a:hover, footer span.back-to-top:hover, footer span a:hover {
   color: #343A40;
 }
@@ -65,6 +71,12 @@ button:hover {
 
 .archives li:last-child, .elsewhere li:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 400px) {
+  .archives li, .elsewhere li {
+    text-align: center;
+  }
 }
 
 .archives a, .elsewhere a {
@@ -151,6 +163,12 @@ header {
   }
   .header-page-name .h1-mobile a:hover {
     color: #343A40;
+  }
+}
+
+@media screen and (max-width: 1240px) and (max-width: 400px) {
+  .header-page-name .h1-mobile a {
+    font-size: 32px;
   }
 }
 
@@ -248,6 +266,12 @@ nav .hamburger {
   }
 }
 
+@media screen and (max-width: 1240px) and (max-width: 400px) {
+  nav .hamburger::after {
+    font-size: 16px;
+  }
+}
+
 nav ul {
   padding: 15px 5px 25px;
   display: -webkit-box;
@@ -288,6 +312,12 @@ nav a {
 @media screen and (max-width: 1240px) {
   nav a {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav a {
+    font-size: 14px;
   }
 }
 
@@ -334,6 +364,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .banner h2 {
+    font-size: 30px;
+  }
+}
+
 .banner p {
   color: #fff;
   font-size: 20px;
@@ -347,6 +383,13 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .banner p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 .banner a {
   color: #fff;
   font-size: 22px;
@@ -356,6 +399,12 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .banner a {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner a {
+    font-size: 16px;
   }
 }
 
@@ -397,6 +446,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .posts-with-thumbnail li {
+    display: block;
+  }
+}
+
 .posts-with-thumbnail .post-content {
   padding: 25px 5%;
   display: -webkit-box;
@@ -424,6 +479,12 @@ nav a:hover {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 400px) {
+  .posts-with-thumbnail .post-content .post-category {
+    font-size: 12px;
+  }
+}
+
 .posts-with-thumbnail .post-content .post-category.green {
   color: #28A745;
 }
@@ -442,6 +503,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .posts-with-thumbnail .post-content h3 {
+    font-size: 24px;
+  }
+}
+
 .posts-with-thumbnail .post-content .date {
   margin-bottom: 10px;
   display: inline-block;
@@ -455,6 +522,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .posts-with-thumbnail .post-content .date {
+    font-size: 14px;
+  }
+}
+
 .posts-with-thumbnail .post-content .content {
   margin-bottom: 20px;
   color: #000;
@@ -465,6 +538,13 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .posts-with-thumbnail .post-content .content {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .posts-with-thumbnail .post-content .content {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -489,6 +569,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .posts-with-thumbnail figure {
+    margin-bottom: 25px;
+  }
+}
+
 .posts-with-thumbnail figure img {
   width: 100%;
   height: auto;
@@ -500,6 +586,13 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .posts-with-thumbnail figure img {
     max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .posts-with-thumbnail figure img {
+    max-width: 250px;
+    margin: 0 auto;
   }
 }
 
@@ -549,6 +642,13 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .blogs-section aside h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
 .blogs-container {
   margin-bottom: 60px;
 }
@@ -567,6 +667,12 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .blogs-container h3 {
     font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blogs-container h3 {
+    font-size: 24px;
   }
 }
 
@@ -590,6 +696,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .blogs > li {
+    margin-bottom: 40px;
+  }
+}
+
 .blogs > li:last-child {
   margin-bottom: 0;
 }
@@ -608,6 +720,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .blogs h4 {
+    font-size: 26px;
+  }
+}
+
 .blogs .date-author {
   margin-bottom: 25px;
   display: inline-block;
@@ -618,6 +736,12 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .blogs .date-author {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blogs .date-author {
+    font-size: 14px;
   }
 }
 
@@ -635,6 +759,13 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .blogs p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blogs p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -670,6 +801,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .blogs h5 {
+    font-size: 22px;
+  }
+}
+
 .blogs h6 {
   margin-bottom: 10px;
   color: #000;
@@ -684,6 +821,12 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .blogs h6 {
+    font-size: 20px;
+  }
+}
+
 .blogs code {
   margin-bottom: 20px;
   display: block;
@@ -694,6 +837,12 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .blogs code {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blogs code {
+    font-size: 14px;
   }
 }
 
@@ -713,6 +862,13 @@ nav a:hover {
   .blogs ul li {
     margin-bottom: 8px;
     font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blogs ul li {
+    font-size: 14px;
   }
 }
 
@@ -736,6 +892,13 @@ nav a:hover {
   .blogs ol li {
     margin-bottom: 8px;
     font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blogs ol li {
+    font-size: 14px;
   }
 }
 
@@ -764,6 +927,12 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .blog-control-buttons button {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog-control-buttons button {
+    font-size: 14px;
   }
 }
 
@@ -805,6 +974,14 @@ nav a:hover {
 @media screen and (max-width: 1240px) {
   .about p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
   }
 }
 
