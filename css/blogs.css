@@ -394,6 +394,7 @@ nav a {
   border-radius: 20px;
   margin-right: 5px;
   display: inline-block;
+  background-color: transparent;
   color: #007BFF;
   font-size: 17px;
   text-transform: capitalize;
