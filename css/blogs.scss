@@ -587,6 +587,7 @@ nav {
 
       @include breakpoint(tablet) {
         margin-bottom: 8px;
+        font-size: 16px;
       }
 
       &:last-child { margin-bottom: 0; }
@@ -605,6 +606,7 @@ nav {
 
       @include breakpoint(tablet) {
         margin-bottom: 8px;
+        font-size: 16px;
       }
 
       &:last-child { margin-bottom: 0; }
@@ -688,11 +690,14 @@ footer {
     font-size: 17px;
     text-align: center;
 
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
+
     &:last-child { margin-bottom: 0; }
 
     &.back-to-top {
       @extend %blue-links-style;
-
       &:hover { cursor: pointer; }
     }
 
