@@ -44,6 +44,15 @@ button {
   &:hover { cursor: pointer; }
 }
 
+figure {
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+}
+
 .wrapper {
   width: 77.05%;
   min-width: 1170px;
@@ -92,9 +101,8 @@ button {
 }
 /* Common Styles end */
 
-header { 
-  padding-top: 20px; 
-}
+/* Header Styles start */
+header { padding-top: 20px; }
 
 .header-page-name {
   padding-bottom: 15px;
@@ -223,9 +231,7 @@ nav {
       font-size: 0;
       transition: all 0.5s ease-in;
 
-      &.open {
-        transform: rotate(90deg);
-      }
+      &.open { transform: rotate(90deg); }
 
       &::after {
         content: "\f0c9";
@@ -253,9 +259,7 @@ nav {
       overflow: hidden;
       transition: height 0.5s ease-in;
 
-      &.show {
-        height: 100%;
-      }
+      &.show { height: 100%; }
 
       li {
         padding: 5px 0;
@@ -281,7 +285,9 @@ nav {
     &:hover { color: $color4; }
   }
 }
+/* Header Styles end */
 
+/* Banner Styles start */
 .banner {
   margin-bottom: 30px;
   padding: 60px 4.73%;
@@ -347,7 +353,9 @@ nav {
     &:hover { color: $color4; }
   }
 }
+/* Banner Styles end */
 
+/* 2 Column Layout Styles start */
 .posts-with-thumbnail {
   margin-bottom: 30px;
   display: flex;
@@ -445,9 +453,7 @@ nav {
       }
     }
 
-    a {
-      @extend %blue-links-style;
-    }
+    a { @extend %blue-links-style; }
   }
 
   figure {
@@ -465,11 +471,8 @@ nav {
     }
 
     img {
-      width: 100%;
-      height: auto;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      display: block;
 
       @include breakpoint(tablet) {
         max-width: 300px;
@@ -482,7 +485,9 @@ nav {
     }
   }
 }
+/* 2 Column Layout Styles end */
 
+/* Blogs section Styles start */
 .blogs-section {
   display: flex;
   column-gap: 2.7%;
@@ -790,14 +795,11 @@ nav {
   }
 }
 
-.archives {
-  @extend %list-with-links;
-}
+.archives { @extend %list-with-links; }
+.elsewhere { @extend %list-with-links; }
+/* Blogs section Styles end */
 
-.elsewhere {
-  @extend %list-with-links;
-}
-
+/* Footer section Styles start */
 footer {
   padding: 40px 0;
   border-top: 2px solid $color6;
@@ -828,3 +830,4 @@ footer {
     }
   }
 }
+/* Footer section Styles end */

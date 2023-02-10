@@ -23,6 +23,13 @@ button:hover {
   cursor: pointer;
 }
 
+figure img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+
 .wrapper {
   width: 77.05%;
   min-width: 1170px;
@@ -84,6 +91,7 @@ button:hover {
 }
 
 /* Common Styles end */
+/* Header Styles start */
 header {
   padding-top: 20px;
 }
@@ -325,6 +333,8 @@ nav a:hover {
   color: #007BFF;
 }
 
+/* Header Styles end */
+/* Banner Styles start */
 .banner {
   margin-bottom: 30px;
   padding: 60px 4.73%;
@@ -412,6 +422,8 @@ nav a:hover {
   color: #007BFF;
 }
 
+/* Banner Styles end */
+/* 2 Column Layout Styles start */
 .posts-with-thumbnail {
   margin-bottom: 30px;
   display: -webkit-box;
@@ -576,11 +588,8 @@ nav a:hover {
 }
 
 .posts-with-thumbnail figure img {
-  width: 100%;
-  height: auto;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  display: block;
 }
 
 @media screen and (max-width: 1240px) {
@@ -596,6 +605,8 @@ nav a:hover {
   }
 }
 
+/* 2 Column Layout Styles end */
+/* Blogs section Styles start */
 .blogs-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -985,6 +996,8 @@ nav a:hover {
   }
 }
 
+/* Blogs section Styles end */
+/* Footer section Styles start */
 footer {
   padding: 40px 0;
   border-top: 2px solid #e5e5e5;
@@ -1017,4 +1030,6 @@ footer span.back-to-top:hover {
 footer span a {
   text-transform: capitalize;
 }
+
+/* Footer section Styles end */
 /*# sourceMappingURL=blogs.css.map */
