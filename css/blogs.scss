@@ -363,6 +363,10 @@ nav {
       font-family: $font-secondary;
       font-size: 30px;
       font-weight: bold;
+
+      @include breakpoint(tablet) {
+        font-size: 26px;
+      }
     }
 
     .date {
@@ -420,6 +424,11 @@ nav {
   display: flex;
   column-gap: 2.7%;
 
+  @include breakpoint(tablet) {
+    margin-bottom: 60px;
+    display: block;
+  }
+
   aside {
     flex-basis: 31.4%;
     flex-shrink: 0;
@@ -437,6 +446,10 @@ nav {
       font-style: italic;
       font-weight: bold;
       text-transform: capitalize;
+
+      @include breakpoint(tablet) {
+        font-size: 26px;
+      }
     }
   }
 }
@@ -453,14 +466,27 @@ nav {
     font-size: 32px;
     font-style: italic;
     font-weight: bold;
+
+    @include breakpoint(tablet) {
+      font-size: 26px;
+    }
   }
 }
 
 .blogs {
   margin-bottom: 60px;
 
+  @include breakpoint(tablet) {
+    margin-bottom: 50px;
+  }
+
   > li {
     margin-bottom: 60px;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 50px;
+    }
+
     &:last-child { margin-bottom: 0; }
   }
 
@@ -470,6 +496,10 @@ nav {
     font-family: $font-secondary;
     font-size: 46px;
     font-weight: bold;
+
+    @include breakpoint(tablet) {
+      font-size: 34px;
+    }
   }
 
   .date-author {
@@ -477,6 +507,10 @@ nav {
     display: inline-block;
     color: $color3;
     font-size: 17px;
+
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
 
     a {
       @extend %blue-links-style;
@@ -489,6 +523,10 @@ nav {
     color: $color2;
     font-size: 17px;
     line-height: 22px;
+
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
 
     &:last-child { margin-bottom: 0; }
     a { @extend %blue-links-style; }
@@ -508,6 +546,10 @@ nav {
     font-size: 38px;
     font-weight: bold;
     text-transform: capitalize;
+
+    @include breakpoint(tablet) {
+      font-size: 30px;
+    }
   }
 
   h6 {
@@ -516,12 +558,21 @@ nav {
     font-family: $font-secondary;
     font-size: 32px;
     font-weight: bold;
+
+    @include breakpoint(tablet) {
+      font-size: 24px;
+    }
   }
 
   code {
     margin-bottom: 20px;
     display: block;
+    font-size: 17px;
     letter-spacing: 1px;
+
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
   }
 
   ul {
@@ -533,6 +584,10 @@ nav {
     li {
       margin-bottom: 5px;
       font-size: 17px;
+
+      @include breakpoint(tablet) {
+        margin-bottom: 8px;
+      }
 
       &:last-child { margin-bottom: 0; }
     }
@@ -547,6 +602,10 @@ nav {
     li {
       margin-bottom: 5px;
       font-size: 17px;
+
+      @include breakpoint(tablet) {
+        margin-bottom: 8px;
+      }
 
       &:last-child { margin-bottom: 0; }
     }
@@ -566,6 +625,10 @@ nav {
     color: $color4;
     font-size: 17px;
     text-transform: capitalize;
+
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
 
     &:hover {
       background-color: $color4;
@@ -597,6 +660,10 @@ nav {
     color: $color2;
     font-size: 17px;
     line-height: 22px;
+
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
   }
 }
 

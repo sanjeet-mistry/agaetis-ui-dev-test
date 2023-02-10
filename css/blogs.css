@@ -436,6 +436,12 @@ nav a:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1240px) {
+  .posts-with-thumbnail .post-content h3 {
+    font-size: 26px;
+  }
+}
+
 .posts-with-thumbnail .post-content .date {
   margin-bottom: 10px;
   display: inline-block;
@@ -505,6 +511,13 @@ nav a:hover {
           column-gap: 2.7%;
 }
 
+@media screen and (max-width: 1240px) {
+  .blogs-section {
+    margin-bottom: 60px;
+    display: block;
+  }
+}
+
 .blogs-section aside {
   -ms-flex-preferred-size: 31.4%;
       flex-basis: 31.4%;
@@ -530,6 +543,12 @@ nav a:hover {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1240px) {
+  .blogs-section aside h3 {
+    font-size: 26px;
+  }
+}
+
 .blogs-container {
   margin-bottom: 60px;
 }
@@ -545,12 +564,30 @@ nav a:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1240px) {
+  .blogs-container h3 {
+    font-size: 26px;
+  }
+}
+
 .blogs {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 1240px) {
+  .blogs {
+    margin-bottom: 50px;
+  }
+}
+
 .blogs > li {
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1240px) {
+  .blogs > li {
+    margin-bottom: 50px;
+  }
 }
 
 .blogs > li:last-child {
@@ -565,11 +602,23 @@ nav a:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1240px) {
+  .blogs h4 {
+    font-size: 34px;
+  }
+}
+
 .blogs .date-author {
   margin-bottom: 25px;
   display: inline-block;
   color: #808080;
   font-size: 17px;
+}
+
+@media screen and (max-width: 1240px) {
+  .blogs .date-author {
+    font-size: 16px;
+  }
 }
 
 .blogs .date-author a {
@@ -581,6 +630,12 @@ nav a:hover {
   color: #000;
   font-size: 17px;
   line-height: 22px;
+}
+
+@media screen and (max-width: 1240px) {
+  .blogs p {
+    font-size: 16px;
+  }
 }
 
 .blogs p:last-child {
@@ -609,6 +664,12 @@ nav a:hover {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1240px) {
+  .blogs h5 {
+    font-size: 30px;
+  }
+}
+
 .blogs h6 {
   margin-bottom: 10px;
   color: #000;
@@ -617,10 +678,23 @@ nav a:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1240px) {
+  .blogs h6 {
+    font-size: 24px;
+  }
+}
+
 .blogs code {
   margin-bottom: 20px;
   display: block;
+  font-size: 17px;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1240px) {
+  .blogs code {
+    font-size: 16px;
+  }
 }
 
 .blogs ul {
@@ -633,6 +707,12 @@ nav a:hover {
 .blogs ul li {
   margin-bottom: 5px;
   font-size: 17px;
+}
+
+@media screen and (max-width: 1240px) {
+  .blogs ul li {
+    margin-bottom: 8px;
+  }
 }
 
 .blogs ul li:last-child {
@@ -649,6 +729,12 @@ nav a:hover {
 .blogs ol li {
   margin-bottom: 5px;
   font-size: 17px;
+}
+
+@media screen and (max-width: 1240px) {
+  .blogs ol li {
+    margin-bottom: 8px;
+  }
 }
 
 .blogs ol li:last-child {
@@ -671,6 +757,12 @@ nav a:hover {
   color: #007BFF;
   font-size: 17px;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1240px) {
+  .blog-control-buttons button {
+    font-size: 16px;
+  }
 }
 
 .blog-control-buttons button:hover {
@@ -706,6 +798,12 @@ nav a:hover {
   color: #000;
   font-size: 17px;
   line-height: 22px;
+}
+
+@media screen and (max-width: 1240px) {
+  .about p {
+    font-size: 16px;
+  }
 }
 
 footer {
