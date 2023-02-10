@@ -51,7 +51,7 @@ header {
 }
 
 .header-page-name h1 a {
-  color: #f8f8f8;
+  color: #343A40;
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   font-weight: bold;
@@ -116,7 +116,7 @@ nav a {
   margin-bottom: 30px;
   padding: 60px 4.73%;
   border-radius: 5px;
-  background-color: #f8f8f8;
+  background-color: #343A40;
 }
 
 .banner > * {
