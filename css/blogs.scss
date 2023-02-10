@@ -10,12 +10,12 @@ $color8: #f8f8f8;
 $font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $font-secondary: 'Times New Roman', Times, serif;
 
-$small-desktop: 1240px;
+$tablet: 1240px;
 $small-mobile: 400px;
 
 @mixin breakpoint($device) {
-	@if ($device == 'small-desktop') {
-		@media screen and (max-width: $small-desktop) {
+	@if ($device == 'tablet') {
+		@media screen and (max-width: $tablet) {
       @content;
     }
 	}
@@ -28,11 +28,7 @@ $small-mobile: 400px;
 
 /* Common Styles start */
 * { box-sizing: border-box; }
-
-body { 
-  font-family: $font-primary;
-  font-display: swap;
-}
+body { font-family: $font-primary; }
 
 a {
   text-decoration: none;
@@ -52,6 +48,11 @@ button {
   width: 77.05%;
   min-width: 1170px;
   margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    width: 96%;
+    min-width: auto;
+  }
 }
 
 %blue-links-style {
@@ -79,7 +80,9 @@ button {
 }
 /* Common Styles end */
 
-header { padding-top: 20px; }
+header { 
+  padding-top: 20px; 
+}
 
 .header-page-name {
   padding-bottom: 15px;
@@ -88,16 +91,28 @@ header { padding-top: 20px; }
   align-items: center;
   justify-content: space-between;
 
+  @include breakpoint(tablet) {
+    flex-wrap: wrap;
+  }
+
   a {
     color: $color3;
     font-size: 17px;
     font-weight: 600;
     text-transform: capitalize;
 
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
+
     &:hover { color: $color4; }
   }
 
-  h1 {
+  .h1-desktop {
+    @include breakpoint(tablet) {
+      display: none;
+    }
+
     a {
       color: $color7;
       font-family: $font-secondary;
@@ -106,11 +121,34 @@ header { padding-top: 20px; }
       &:hover { color: $color7; }
     }
   }
+
+  .h1-mobile {
+    display: none;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 15px;
+      display: block;
+      flex-basis: 100%;
+      text-align: center;
+
+      a {
+        color: $color7;
+        font-family: $font-secondary;
+        font-size: 40px;
+        font-weight: bold;
+        &:hover { color: $color7; }
+      }
+    }
+  }
 }
 
 .header-buttons {
   display: flex;
   align-items: center;
+
+  @include breakpoint(tablet) {
+    display: inline-flex;
+  }
 
   form {
     input { display: none; }
@@ -133,6 +171,10 @@ header { padding-top: 20px; }
         font-family: "Font Awesome 6 Free";
         font-size: 18px;
         font-weight: 900;
+
+        @include breakpoint(tablet) {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -154,10 +196,52 @@ header { padding-top: 20px; }
 }
 
 nav {
+  text-align: center;
+
+  .hamburger {
+    display: none;
+
+    @include breakpoint(tablet) {
+      padding: 15px 0;
+      display: inline-block;
+      font-size: 0;
+      transition: all 0.5s ease-in;
+
+      &.open {
+        transform: rotate(90deg);
+      }
+
+      &::after {
+        content: "\f0c9";
+        color: $color3;
+        font-family: "Font Awesome 6 Free";
+        font-size: 18px;
+        font-weight: 900;
+      }
+    }
+  }
+
   ul {
     padding: 15px 5px 25px;
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(tablet) {
+      height: 0;
+      padding: 0;
+      display: block;
+      overflow: hidden;
+      transition: height 0.5s ease-in;
+
+      &.show {
+        height: 100%;
+      }
+
+      li {
+        padding: 5px 0;
+        &:last-child { margin-bottom: 15px; }
+      }
+    }
   }
 
   a {

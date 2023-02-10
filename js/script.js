@@ -32,3 +32,17 @@ const addArchives = () => {
 }
 
 addArchives();
+
+const ulNavigation = body.querySelector("nav ul");
+const hamburger = body.querySelector("nav .hamburger");
+
+hamburger.addEventListener("click", () => {
+  if (hamburger.classList.contains("open")) {
+    hamburger.classList.remove("open");
+    ulNavigation.classList.remove("show");
+    
+  } else {
+    hamburger.classList.add("open");
+    ulNavigation.classList.add("show");
+  }
+});

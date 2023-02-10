@@ -6,7 +6,6 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-display: swap;
 }
 
 a {
@@ -28,6 +27,13 @@ button:hover {
   width: 77.05%;
   min-width: 1170px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1240px) {
+  .wrapper {
+    width: 96%;
+    min-width: auto;
+  }
 }
 
 .archives a, .elsewhere a, .posts-with-thumbnail .post-content a, .blogs .date-author a, .blogs p a, footer span.back-to-top, footer span a {
@@ -78,6 +84,13 @@ header {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1240px) {
+  .header-page-name {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .header-page-name a {
   color: #808080;
   font-size: 17px;
@@ -85,19 +98,54 @@ header {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1240px) {
+  .header-page-name a {
+    font-size: 16px;
+  }
+}
+
 .header-page-name a:hover {
   color: #007BFF;
 }
 
-.header-page-name h1 a {
+@media screen and (max-width: 1240px) {
+  .header-page-name .h1-desktop {
+    display: none;
+  }
+}
+
+.header-page-name .h1-desktop a {
   color: #343A40;
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   font-weight: bold;
 }
 
-.header-page-name h1 a:hover {
+.header-page-name .h1-desktop a:hover {
   color: #343A40;
+}
+
+.header-page-name .h1-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1240px) {
+  .header-page-name .h1-mobile {
+    margin-bottom: 15px;
+    display: block;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  .header-page-name .h1-mobile a {
+    color: #343A40;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .header-page-name .h1-mobile a:hover {
+    color: #343A40;
+  }
 }
 
 .header-buttons {
@@ -107,6 +155,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1240px) {
+  .header-buttons {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .header-buttons form input {
@@ -135,6 +191,12 @@ header {
   font-weight: 900;
 }
 
+@media screen and (max-width: 1240px) {
+  .header-buttons form button::after {
+    font-size: 16px;
+  }
+}
+
 .header-buttons .sign-up {
   padding: 5px 7px;
   border: 2px solid #808080;
@@ -151,6 +213,35 @@ header {
   transition: color 0.4s ease-in, border 0.4s ease-in;
 }
 
+nav {
+  text-align: center;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1240px) {
+  nav .hamburger {
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 0;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  nav .hamburger.open {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  nav .hamburger::after {
+    content: "\f0c9";
+    color: #808080;
+    font-family: "Font Awesome 6 Free";
+    font-size: 18px;
+    font-weight: 900;
+  }
+}
+
 nav ul {
   padding: 15px 5px 25px;
   display: -webkit-box;
@@ -159,6 +250,26 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 1240px) {
+  nav ul {
+    height: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    -webkit-transition: height 0.5s ease-in;
+    transition: height 0.5s ease-in;
+  }
+  nav ul.show {
+    height: 100%;
+  }
+  nav ul li {
+    padding: 5px 0;
+  }
+  nav ul li:last-child {
+    margin-bottom: 15px;
+  }
 }
 
 nav a {
