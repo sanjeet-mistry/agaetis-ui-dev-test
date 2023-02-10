@@ -251,6 +251,10 @@ nav a {
       flex-shrink: 0;
 }
 
+.blogs-container {
+  margin-bottom: 60px;
+}
+
 .blogs-container h3 {
   padding-bottom: 20px;
   border-bottom: 2px solid #e5e5e5;
@@ -260,6 +264,36 @@ nav a {
   font-size: 32px;
   font-style: italic;
   font-weight: bold;
+}
+
+.blogs-container .blog-control-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogs-container .blog-control-buttons button {
+  padding: 8px 15px;
+  border: 1px solid #007BFF;
+  border-radius: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  color: #007BFF;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.blogs-container .blog-control-buttons button:last-child {
+  margin-right: 0;
+}
+
+.blogs-container .blog-control-buttons button.disabled {
+  border: 1px solid #808080;
+  color: #808080;
+}
+
+.blogs {
+  margin-bottom: 60px;
 }
 
 .blogs > li {
