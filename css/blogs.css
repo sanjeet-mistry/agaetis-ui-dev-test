@@ -51,7 +51,7 @@ header {
 }
 
 .header-page-name h1 a {
-  color: #343A40;
+  color: #f8f8f8;
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   font-weight: bold;
@@ -116,7 +116,7 @@ nav a {
   margin-bottom: 30px;
   padding: 60px 4.73%;
   border-radius: 5px;
-  background-color: #343A40;
+  background-color: #f8f8f8;
 }
 
 .banner > * {
@@ -432,7 +432,7 @@ nav a {
 
 .about {
   padding: 30px 6.5%;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .about p {
@@ -456,6 +456,39 @@ nav a {
 .archives a, .elsewhere a {
   color: #007BFF;
   font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+footer {
+  padding: 40px 0;
+  border-top: 2px solid #e5e5e5;
+  background-color: #f8f8f8;
+}
+
+footer span {
+  margin-bottom: 20px;
+  display: block;
+  color: #808080;
+  font-size: 17px;
+  text-align: center;
+}
+
+footer span:last-child {
+  margin-bottom: 0;
+}
+
+footer span.back-to-top {
+  color: #007BFF;
+  font-weight: 600;
+}
+
+footer span.back-to-top:hover {
+  cursor: pointer;
+}
+
+footer span a {
+  color: #007BFF;
   font-weight: 600;
   text-transform: capitalize;
 }

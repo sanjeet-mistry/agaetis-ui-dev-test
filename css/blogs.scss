@@ -5,6 +5,7 @@ $color4: #007BFF;
 $color5: #28A745;
 $color6: #e5e5e5;
 $color7: #343A40;
+$color7: #f8f8f8;
 
 $font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $font-secondary: 'Times New Roman', Times, serif;
@@ -375,7 +376,7 @@ nav {
 
 .about {
   padding: 30px 6.5%;
-  background-color: #F8F8F8;
+  background-color: $color7;
 
   p {
     color: $color2;
@@ -406,4 +407,35 @@ nav {
 
 .elsewhere {
   @extend %list-with-links;
+}
+
+footer {
+  padding: 40px 0;
+  border-top: 2px solid $color6;
+  background-color: $color7;
+
+  span {
+    margin-bottom: 20px;
+    display: block;
+    color: $color3;
+    font-size: 17px;
+    text-align: center;
+
+    &:last-child { margin-bottom: 0; }
+
+    &.back-to-top {
+      color: $color4;
+      font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    a {
+      color: $color4;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
 }
