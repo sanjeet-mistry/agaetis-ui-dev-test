@@ -10,6 +10,7 @@ $color8: #f8f8f8;
 $font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $font-secondary: 'Times New Roman', Times, serif;
 
+/* Common Styles start */
 * { box-sizing: border-box; }
 body { font-family: $font-primary; }
 
@@ -17,7 +18,10 @@ a {
   text-decoration: none;
   color: unset;
 
-  &:hover { cursor: pointer; }
+  &:hover { 
+    cursor: pointer;
+    transition: color 0.4s ease-in; 
+  }
 }
 
 button {
@@ -28,6 +32,31 @@ button {
   width: 77.05%;
   margin: 0 auto;
 }
+
+%blue-links-style {
+  display: inline-block;
+  color: $color4;
+  font-size: 17px;
+  font-weight: 600;
+  box-sizing: unset;
+
+  &:hover { color: $color7; }
+}
+
+%list-with-links {
+  padding-left: 6.5%;
+
+  li {
+    margin-bottom: 7px;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  a {
+    @extend %blue-links-style;
+    text-transform: capitalize;
+  }
+}
+/* Common Styles end */
 
 header { padding-top: 20px; }
 
@@ -43,6 +72,8 @@ header { padding-top: 20px; }
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
+
+    &:hover { color: $color4; }
   }
 
   h1 {
@@ -51,6 +82,7 @@ header { padding-top: 20px; }
       font-family: $font-secondary;
       font-size: 40px;
       font-weight: bold;
+      &:hover { color: $color7; }
     }
   }
 }
@@ -69,6 +101,11 @@ header { padding-top: 20px; }
       color: $color3;
       font-size: 0;
 
+      &:hover { 
+        color: $color4;
+        transition: color 0.4s ease-in;
+      }
+
       &::after {
         content: '\f002';
         display: inline-block;
@@ -86,6 +123,12 @@ header { padding-top: 20px; }
     background-color: transparent;
     color: $color3;
     font-size: 16px;
+
+    &:hover {
+      border: 2px solid $color4;
+      color: $color4;
+      transition: color 0.4s ease-in, border 0.4s ease-in;
+    }
   }
 }
 
@@ -101,6 +144,8 @@ nav {
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
+    
+    &:hover { color: $color4; }
   }
 }
 
@@ -135,6 +180,8 @@ nav {
     color: $color1;
     font-size: 22px;
     font-weight: bold;
+
+    &:hover { color: $color4; }
   }
 }
 
@@ -180,7 +227,7 @@ nav {
       margin-bottom: 10px;
       display: inline-block;
       color: $color3;
-      font-size: 16px;
+      font-size: 17px;
     }
 
     .content {
@@ -191,10 +238,7 @@ nav {
     }
 
     a {
-      display: inline-block;
-      color: $color4;
-      font-size: 16px;
-      font-weight: 600;
+      @extend %blue-links-style;
     }
   }
 
@@ -269,14 +313,13 @@ nav {
   }
 
   .date-author {
+    margin-bottom: 25px;
+    display: inline-block;
     color: $color3;
-    font-size: 16px;
+    font-size: 17px;
 
     a {
-      margin-bottom: 25px;
-      display: inline-block;
-      color:$color4;
-      font-weight: 600;
+      @extend %blue-links-style;
       text-transform: capitalize;
     }
   }
@@ -288,7 +331,7 @@ nav {
     line-height: 22px;
 
     &:last-child { margin-bottom: 0; }
-    a { color: $color4; }
+    a { @extend %blue-links-style; }
     .bold { font-weight: bold; }
     .italic { font-style: italic; }
   }
@@ -364,12 +407,24 @@ nav {
     font-size: 17px;
     text-transform: capitalize;
 
+    &:hover {
+      background-color: $color4;
+      color: $color1;
+      transition: background-color 0.4s ease-in, color 0.4s ease-in;
+    }
+
     &:last-child { margin-right: 0; }
 
     &.disabled {
       border: 1px solid $color3;
       color: $color3;
-      &:hover { cursor: default; }
+
+      &:hover {
+        background-color: transparent;
+        color: $color3;
+        cursor: default;
+        transition: none;
+      }
     }
   }
 }
@@ -385,22 +440,6 @@ nav {
   }
 }
 
-%list-with-links {
-  padding-left: 6.5%;
-
-  li {
-    margin-bottom: 7px;
-    &:last-child { margin-bottom: 0; }
-  }
-
-  a {
-    color: $color4;
-    font-size: 17px;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
-}
-
 .archives {
   @extend %list-with-links;
 }
@@ -413,6 +452,7 @@ footer {
   padding: 40px 0;
   border-top: 2px solid $color6;
   background-color: $color8;
+  text-align: center;
 
   span {
     margin-bottom: 20px;
@@ -424,8 +464,7 @@ footer {
     &:last-child { margin-bottom: 0; }
 
     &.back-to-top {
-      color: $color4;
-      font-weight: 600;
+      @extend %blue-links-style;
 
       &:hover {
         cursor: pointer;
@@ -433,8 +472,7 @@ footer {
     }
 
     a {
-      color: $color4;
-      font-weight: 600;
+      @extend %blue-links-style;
       text-transform: capitalize;
     }
   }

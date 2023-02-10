@@ -1,3 +1,4 @@
+/* Common Styles start */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,6 +15,8 @@ a {
 
 a:hover {
   cursor: pointer;
+  -webkit-transition: color 0.4s ease-in;
+  transition: color 0.4s ease-in;
 }
 
 button:hover {
@@ -25,6 +28,36 @@ button:hover {
   margin: 0 auto;
 }
 
+.archives a, .elsewhere a, .posts-with-thumbnail .post-content a, .blogs .date-author a, .blogs p a, footer span.back-to-top, footer span a {
+  display: inline-block;
+  color: #007BFF;
+  font-size: 17px;
+  font-weight: 600;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+.archives a:hover, .elsewhere a:hover, .posts-with-thumbnail .post-content a:hover, .blogs .date-author a:hover, .blogs p a:hover, footer span.back-to-top:hover, footer span a:hover {
+  color: #343A40;
+}
+
+.archives, .elsewhere {
+  padding-left: 6.5%;
+}
+
+.archives li, .elsewhere li {
+  margin-bottom: 7px;
+}
+
+.archives li:last-child, .elsewhere li:last-child {
+  margin-bottom: 0;
+}
+
+.archives a, .elsewhere a {
+  text-transform: capitalize;
+}
+
+/* Common Styles end */
 header {
   padding-top: 20px;
 }
@@ -50,11 +83,19 @@ header {
   text-transform: capitalize;
 }
 
+.header-page-name a:hover {
+  color: #007BFF;
+}
+
 .header-page-name h1 a {
   color: #343A40;
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   font-weight: bold;
+}
+
+.header-page-name h1 a:hover {
+  color: #343A40;
 }
 
 .header-buttons {
@@ -78,6 +119,12 @@ header {
   font-size: 0;
 }
 
+.header-buttons form button:hover {
+  color: #007BFF;
+  -webkit-transition: color 0.4s ease-in;
+  transition: color 0.4s ease-in;
+}
+
 .header-buttons form button::after {
   content: '\f002';
   display: inline-block;
@@ -95,6 +142,13 @@ header {
   font-size: 16px;
 }
 
+.header-buttons .sign-up:hover {
+  border: 2px solid #007BFF;
+  color: #007BFF;
+  -webkit-transition: color 0.4s ease-in, border 0.4s ease-in;
+  transition: color 0.4s ease-in, border 0.4s ease-in;
+}
+
 nav ul {
   padding: 15px 5px 25px;
   display: -webkit-box;
@@ -110,6 +164,10 @@ nav a {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
+}
+
+nav a:hover {
+  color: #007BFF;
 }
 
 .banner {
@@ -149,6 +207,10 @@ nav a {
   color: #fff;
   font-size: 22px;
   font-weight: bold;
+}
+
+.banner a:hover {
+  color: #007BFF;
 }
 
 .posts-with-thumbnail {
@@ -203,7 +265,7 @@ nav a {
   margin-bottom: 10px;
   display: inline-block;
   color: #808080;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .posts-with-thumbnail .post-content .content {
@@ -211,13 +273,6 @@ nav a {
   color: #000;
   font-size: 17px;
   line-height: 22px;
-}
-
-.posts-with-thumbnail .post-content a {
-  display: inline-block;
-  color: #007BFF;
-  font-size: 16px;
-  font-weight: 600;
 }
 
 .posts-with-thumbnail figure {
@@ -304,15 +359,13 @@ nav a {
 }
 
 .blogs .date-author {
+  margin-bottom: 25px;
+  display: inline-block;
   color: #808080;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .blogs .date-author a {
-  margin-bottom: 25px;
-  display: inline-block;
-  color: #007BFF;
-  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -325,10 +378,6 @@ nav a {
 
 .blogs p:last-child {
   margin-bottom: 0;
-}
-
-.blogs p a {
-  color: #007BFF;
 }
 
 .blogs p .bold {
@@ -417,6 +466,13 @@ nav a {
   text-transform: capitalize;
 }
 
+.blog-control-buttons button:hover {
+  background-color: #007BFF;
+  color: #fff;
+  -webkit-transition: background-color 0.4s ease-in, color 0.4s ease-in;
+  transition: background-color 0.4s ease-in, color 0.4s ease-in;
+}
+
 .blog-control-buttons button:last-child {
   margin-right: 0;
 }
@@ -427,7 +483,11 @@ nav a {
 }
 
 .blog-control-buttons button.disabled:hover {
+  background-color: transparent;
+  color: #808080;
   cursor: default;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .about {
@@ -441,29 +501,11 @@ nav a {
   line-height: 22px;
 }
 
-.archives, .elsewhere {
-  padding-left: 6.5%;
-}
-
-.archives li, .elsewhere li {
-  margin-bottom: 7px;
-}
-
-.archives li:last-child, .elsewhere li:last-child {
-  margin-bottom: 0;
-}
-
-.archives a, .elsewhere a {
-  color: #007BFF;
-  font-size: 17px;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
 footer {
   padding: 40px 0;
   border-top: 2px solid #e5e5e5;
   background-color: #f8f8f8;
+  text-align: center;
 }
 
 footer span {
@@ -478,18 +520,11 @@ footer span:last-child {
   margin-bottom: 0;
 }
 
-footer span.back-to-top {
-  color: #007BFF;
-  font-weight: 600;
-}
-
 footer span.back-to-top:hover {
   cursor: pointer;
 }
 
 footer span a {
-  color: #007BFF;
-  font-weight: 600;
   text-transform: capitalize;
 }
 /*# sourceMappingURL=blogs.css.map */
