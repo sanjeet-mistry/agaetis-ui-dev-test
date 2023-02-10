@@ -152,6 +152,7 @@ nav a {
 }
 
 .posts-with-thumbnail {
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,6 +240,8 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 2.7%;
+          column-gap: 2.7%;
 }
 
 .blogs-section aside {
@@ -246,5 +249,128 @@ nav a {
       flex-basis: 31.4%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.blogs-container h3 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 30px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.blogs > li {
+  margin-bottom: 60px;
+}
+
+.blogs > li:last-child {
+  margin-bottom: 0;
+}
+
+.blogs h4 {
+  margin-bottom: 10px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.blogs .date-author {
+  color: #808080;
+  font-size: 16px;
+}
+
+.blogs .date-author a {
+  margin-bottom: 25px;
+  display: inline-block;
+  color: #007BFF;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.blogs p {
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.blogs p:last-child {
+  margin-bottom: 0;
+}
+
+.blogs p a {
+  color: #007BFF;
+}
+
+.blogs p .bold {
+  font-weight: bold;
+}
+
+.blogs p .italic {
+  font-style: italic;
+}
+
+.blogs .border-below {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.blogs h5 {
+  margin-bottom: 10px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.blogs h6 {
+  margin-bottom: 10px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.blogs code {
+  margin-bottom: 20px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.blogs ul {
+  margin-bottom: 20px;
+  padding-left: 3.5%;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.blogs ul li {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.blogs ul li:last-child {
+  margin-bottom: 0;
+}
+
+.blogs ol {
+  margin-bottom: 20px;
+  padding-left: 3.5%;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.blogs ol li {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.blogs ol li:last-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=blogs.css.map */

@@ -138,6 +138,7 @@ nav {
 }
 
 .posts-with-thumbnail {
+  margin-bottom: 30px;
   display: flex;
   column-gap: 2.7%;
 
@@ -213,9 +214,120 @@ nav {
 
 .blogs-section {
   display: flex;
+  column-gap: 2.7%;
 
   aside {
     flex-basis: 31.4%;
     flex-shrink: 0;
+  }
+}
+
+.blogs-container {
+  h3 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid $color6;
+    margin-bottom: 30px;
+    color: $color2;
+    font-family: $font-secondary;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+.blogs {
+  > li {
+    margin-bottom: 60px;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  h4 {
+    margin-bottom: 10px;
+    color: $color2;
+    font-family: $font-secondary;
+    font-size: 46px;
+    font-weight: bold;
+  }
+
+  .date-author {
+    color: $color3;
+    font-size: 16px;
+
+    a {
+      margin-bottom: 25px;
+      display: inline-block;
+      color:$color4;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
+    color: $color2;
+    font-size: 17px;
+    line-height: 22px;
+
+    &:last-child { margin-bottom: 0; }
+    a { color: $color4; }
+    .bold { font-weight: bold; }
+    .italic { font-style: italic; }
+  }
+
+  .border-below {
+    padding-bottom: 20px;
+    border-bottom: 2px solid $color6;
+  }
+
+  h5 {
+    margin-bottom: 10px;
+    color: $color2;
+    font-family: $font-secondary;
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  h6 {
+    margin-bottom: 10px;
+    color: $color2;
+    font-family: $font-secondary;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  code {
+    margin-bottom: 20px;
+    display: block;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    padding-left: 3.5%;
+    list-style-type: disc;
+    list-style-position: inside;
+
+    li {
+      margin-bottom: 5px;
+      font-size: 17px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  ol {
+    margin-bottom: 20px;
+    padding-left: 3.5%;
+    list-style-type: decimal;
+    list-style-position: inside;
+
+    li {
+      margin-bottom: 5px;
+      font-size: 17px;
+
+      &:last-child { margin-bottom: 0; }
+    }
   }
 }
