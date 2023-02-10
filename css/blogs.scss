@@ -1,12 +1,16 @@
 $color1: #fff;
 $color2: #000;
 $color3: #808080;
-$color4: rgba(0, 123, 255, 1);
-$color5: rgba(40, 167, 69, 1);
+$color4: #007BFF;
+$color5: #28A745;
 $color6: #e5e5e5;
+$color7: #343A40;
+
+$font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-secondary: 'Times New Roman', Times, serif;
 
 * { box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { font-family: $font-primary; }
 
 a {
   text-decoration: none;
@@ -42,8 +46,8 @@ header { padding-top: 20px; }
 
   h1 {
     a {
-      color: $color2;
-      font-family: 'Times New Roman', Times, serif;
+      color: $color7;
+      font-family: $font-secondary;
       font-size: 40px;
       font-weight: bold;
     }
@@ -96,5 +100,38 @@ nav {
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
+  }
+}
+
+.banner {
+  padding: 60px 4.73%;
+  border-radius: 5px;
+  background-color: $color7;
+
+  > * { 
+    margin-bottom: 20px;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  span { display: block; }
+
+  h2 {
+    color: $color1;
+    font-family: $font-secondary;
+    font-size: 56px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  p {
+    color: $color1;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  a {
+    color: $color1;
+    font-size: 22px;
+    font-weight: bold;
   }
 }

@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -51,8 +51,8 @@ header {
 }
 
 .header-page-name h1 a {
-  color: #000;
-  font-family: 'Times New Roman', Times, serif;
+  color: #343A40;
+  font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   font-weight: bold;
 }
@@ -110,5 +110,43 @@ nav a {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.banner {
+  padding: 60px 4.73%;
+  border-radius: 5px;
+  background-color: #343A40;
+}
+
+.banner > * {
+  margin-bottom: 20px;
+}
+
+.banner > *:last-child {
+  margin-bottom: 0;
+}
+
+.banner span {
+  display: block;
+}
+
+.banner h2 {
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 56px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.banner p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.banner a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=blogs.css.map */
