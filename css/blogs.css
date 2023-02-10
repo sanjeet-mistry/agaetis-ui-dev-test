@@ -45,6 +45,12 @@ button:hover {
           box-sizing: unset;
 }
 
+@media screen and (max-width: 1240px) {
+  .archives a, .elsewhere a, .posts-with-thumbnail .post-content a, .blogs .date-author a, .blogs p a, footer span.back-to-top, footer span a {
+    font-size: 16px;
+  }
+}
+
 .archives a:hover, .elsewhere a:hover, .posts-with-thumbnail .post-content a:hover, .blogs .date-author a:hover, .blogs p a:hover, footer span.back-to-top:hover, footer span a:hover {
   color: #343A40;
 }
@@ -366,6 +372,12 @@ nav a:hover {
           column-gap: 2.7%;
 }
 
+@media screen and (max-width: 1240px) {
+  .posts-with-thumbnail {
+    display: block;
+  }
+}
+
 .posts-with-thumbnail li {
   border: 2px solid #e5e5e5;
   border-radius: 3px;
@@ -374,6 +386,15 @@ nav a:hover {
   display: flex;
   -webkit-box-shadow: 0 3px 3px 0px #e5e5e5;
   box-shadow: 0 3px 3px 0px #e5e5e5;
+}
+
+@media screen and (max-width: 1240px) {
+  .posts-with-thumbnail li {
+    margin-bottom: 15px;
+  }
+  .posts-with-thumbnail li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .posts-with-thumbnail .post-content {
@@ -422,11 +443,23 @@ nav a:hover {
   font-size: 17px;
 }
 
+@media screen and (max-width: 1240px) {
+  .posts-with-thumbnail .post-content .date {
+    font-size: 16px;
+  }
+}
+
 .posts-with-thumbnail .post-content .content {
   margin-bottom: 20px;
   color: #000;
   font-size: 17px;
   line-height: 22px;
+}
+
+@media screen and (max-width: 1240px) {
+  .posts-with-thumbnail .post-content .content {
+    font-size: 16px;
+  }
 }
 
 .posts-with-thumbnail figure {
@@ -442,12 +475,26 @@ nav a:hover {
       flex-shrink: 0;
 }
 
+@media screen and (max-width: 1240px) {
+  .posts-with-thumbnail figure {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .posts-with-thumbnail figure img {
   width: 100%;
   height: auto;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   display: block;
+}
+
+@media screen and (max-width: 1240px) {
+  .posts-with-thumbnail figure img {
+    max-width: 300px;
+  }
 }
 
 .blogs-section {

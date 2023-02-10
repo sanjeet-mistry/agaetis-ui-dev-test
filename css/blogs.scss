@@ -62,6 +62,10 @@ button {
   font-weight: 600;
   box-sizing: unset;
 
+  @include breakpoint(tablet) {
+    font-size: 16px;
+  }
+
   &:hover { color: $color7; }
 }
 
@@ -316,6 +320,10 @@ nav {
   display: flex;
   column-gap: 2.7%;
 
+  @include breakpoint(tablet) {
+    display: block;
+  }
+
   li {
     border: 2px solid $color6;
     border-radius: 3px;
@@ -323,6 +331,11 @@ nav {
     -webkit-box-shadow: 0 3px 3px 0px $color6;
     -moz-box-shadow: 0 3px 3px 0px $color6;
     box-shadow: 0 3px 3px 0px $color6;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 15px;
+      &:last-child { margin-bottom: 0; }
+    }
   }
 
   .post-content {
@@ -357,6 +370,10 @@ nav {
       display: inline-block;
       color: $color3;
       font-size: 17px;
+
+      @include breakpoint(tablet) {
+        font-size: 16px;
+      }
     }
 
     .content {
@@ -364,6 +381,10 @@ nav {
       color: $color2;
       font-size: 17px;
       line-height: 22px;
+
+      @include breakpoint(tablet) {
+        font-size: 16px;
+      }
     }
 
     a {
@@ -377,12 +398,20 @@ nav {
     flex-basis: 37.14%;
     flex-shrink: 0;
 
+    @include breakpoint(tablet) {
+      justify-content: flex-end;
+    }
+
     img {
       width: 100%;
       height: auto;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       display: block;
+
+      @include breakpoint(tablet) {
+        max-width: 300px;
+      }
     }
   }
 }
