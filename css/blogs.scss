@@ -185,8 +185,7 @@ nav {
     .content {
       margin-bottom: 20px;
       color: $color2;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 17px;
       line-height: 22px;
     }
 
@@ -219,6 +218,21 @@ nav {
   aside {
     flex-basis: 31.4%;
     flex-shrink: 0;
+
+    > * {
+      margin-bottom: 50px;
+      &:last-child { margin-bottom: 0; }
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: $color2;
+      font-family: $font-secondary;
+      font-size: 32px;
+      font-style: italic;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
   }
 }
 
@@ -357,4 +371,39 @@ nav {
       &:hover { cursor: default; }
     }
   }
+}
+
+.about {
+  padding: 30px 6.5%;
+  background-color: #F8F8F8;
+
+  p {
+    color: $color2;
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+%list-with-links {
+  padding-left: 6.5%;
+
+  li {
+    margin-bottom: 7px;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  a {
+    color: $color4;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+
+.archives {
+  @extend %list-with-links;
+}
+
+.elsewhere {
+  @extend %list-with-links;
 }
